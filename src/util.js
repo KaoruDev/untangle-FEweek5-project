@@ -9,5 +9,8 @@ _.templateSettings = {
 _.mixin({
   uselessMath: function (x, y, z) {
     return x + y * z;
+  },
+  getTemplate: function(name){
+  	return _.template($("#template ." + name).html());
   }
 });
